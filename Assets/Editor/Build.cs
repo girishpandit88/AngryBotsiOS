@@ -35,7 +35,7 @@ public static class AutoBuilder {
 		PlayerSettings.bundleIdentifier = "com.ea.SimpleTextEditor";
 		PlayerSettings.bundleVersion = "1.0";
 		EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.iPhone);
-		string target_dir = "/tmp/workspace/iOS-angrybots-unity";
+		string target_dir = "/tmp/workspace/iOS-angrybots-unity/target";
 		string error = BuildPipeline.BuildPlayer(GetScenePaths(),target_dir,BuildTarget.iPhone,BuildOptions.None);
 		if (error != null && error.Length > 0) {
             		throw new Exception("Build failed: " + error);
